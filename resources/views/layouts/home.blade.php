@@ -31,6 +31,8 @@
                         Data
                     </div>
                     <div class="graph_header-subtitle"> Tarefas <b>3/6</b> </div>
+                    <div class="graph-placeholder">
+                    </div>
                 </section>
                 <section class="list">
                     Lista
