@@ -43,6 +43,26 @@
                             <option value="1">Todas as tarefas</option>
                         </select>
                     </div>
+                    <div class="task_list">
+                        <div class="task">
+
+                            <div class="title">
+                                <input type="checkbox" />
+                                <div class="task_title">Titulo da tarefa </div>
+                            </div>
+
+                            <div class="priority">
+                                <div class="sphere">
+                                </div>
+                                <div>Titulo da tarefa </div>
+                            </div>
+
+                            <div class="actions">
+                                Editar - Excluir
+                            </div>
+
+                        </div>
+                    </div>
                 </section>
             </main>
         </div>
