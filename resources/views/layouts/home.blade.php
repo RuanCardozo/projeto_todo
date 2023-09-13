@@ -14,7 +14,7 @@
     <div class="container">
 
         <div class="sidebar">
-            Logo
+            <img src="/assets/images/logo.png">
         </div>
 
         <div class="content">
@@ -58,7 +58,12 @@
                             </div>
 
                             <div class="actions">
-                                Editar - Excluir
+                                <a href="#">
+                                    <img src="/assets/images/icon-edit.png" />
+                                </a>
+                                <a href="#">
+                                    <img src="/assets/images/icon-delete.png" />
+                                </a>
                             </div>
 
                         </div>
@@ -76,7 +81,7 @@
                             </div>
 
                             <div class="actions">
-                                Editar - Excluir
+                                   Editar - Excluir
                             </div>
 
                         </div>
