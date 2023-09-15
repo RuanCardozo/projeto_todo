@@ -32,7 +32,9 @@
                         </div>
 
                         <div class="graph_header-date">
-                            Data
+                            <img src="/assets/images/icon-prev.png"/>
+                                13 de dezembro
+                            <img src="/assets/images/icon-next.png"/>
                         </div>
                     </div>
 
@@ -44,9 +46,8 @@
                         <img src="/assets/images/icon-info.png" />
                         Restam 3 tarefas para serem realizadas
                     </div>
-
-
                 </section>
+
                 <section class="list">
                     <div class="list_header">
                         <select class="list_header-select">
