@@ -1,5 +1,9 @@
 <x-layout>
-
+    <x-slot:btn>
+        <a href="#" class="btn btn-primary">
+            Criar Tarefa
+        </a>
+    </x-slot:btn>
     <section class="graph">
         <div class="graph_header"\>
             <h2>Progreso do Dia</h2>
