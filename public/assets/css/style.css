@@ -55,6 +55,7 @@ nav{
     transform: scale(1.05);
 }
 a.btn{
+    margin-left: 5px;
     text-decoration: none;
 }
 
