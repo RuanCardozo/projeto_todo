@@ -5,6 +5,17 @@
         </a>
     </x-slot:btn>
 
-    Tela de criar uma tarefa
+    <section id="create_task_section">
+        <h1>Criar tarefa </h1>
+        <form>
+            <div class="inputArea">
+                <label for="title">
+                    Titulo da task
+                </label>
+                <input name="title" placeholder="Digite o titulo da tarefa" required />
+
+            </div>
+        </form>
+    </section>
 
 </x-layout>
