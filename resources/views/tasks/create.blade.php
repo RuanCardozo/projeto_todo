@@ -8,19 +8,10 @@
     <section id="create_task_section">
         <h1>Criar tarefa </h1>
         <form>
-            <div class="inputArea">
-                <label for="title">
-                    Titulo da task
-                </label>
-                <input id="title" name="title" placeholder="Digite o titulo da tarefa" required />
-            </div>
 
-            <div class="inputArea">
-                <label for="due_date">
-                    Data da realização
-                </label>
-                <input type="date" id="due_date" name="due_date" placeholder="Data de realização" required />
-            </div>
+            <x-form.text_input name="title" label="Titulo da tarefa" placeholder="Digite o titulo da sua tarefa" />
+
+            <x-form.text_input type="date" name="due_date" label="Data da realização" placeholde="data de realização" />
 
             <div class="inputArea">
                 <label for="category">
@@ -37,6 +28,10 @@
                     Descrição da tarefa
                 </label>
                 <textarea id="descri" name="descripition" placeholder="Digite uma descrição para sua tarefa"></textarea>
+            </div>
+
+            <div class="inputArea">
+                <button type="submit" class="btn btn-primary">Criar tarefa </button>
             </div>
 
         </form>
