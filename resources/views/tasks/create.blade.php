@@ -13,8 +13,12 @@
 
             <x-form.text_input type="date" name="due_date" label="Data da realização" placeholde="data de realização" />
 
-            <x-form.select_input name="category" label="Categoria">
-                <option>Valor qualqer </option>
+            <x-form.select_input name="category_id" label="Categoria">
+
+                @foreach ($categories as  $category)
+                    <option value="{{$category->id}}">{{$category->title}} </option>
+                @endforeach
+
             </x-form.select_input>
 
             <x-form.textarea_input label="Descrição da tarefa" name="description" placeholder="Digite a descrição da tarefa"/>
