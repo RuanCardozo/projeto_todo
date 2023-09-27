@@ -17,7 +17,7 @@
                 <option>Valor qualqer </option>
             </x-form.select_input>
 
-            <x-form.textarea_input name="description" placeholder="Digite a descrição da tarefa"/>
+            <x-form.textarea_input label="Descrição da tarefa" name="description" placeholder="Digite a descrição da tarefa"/>
 
             <x-form.form_button resetTxt="Resetar" submitTxt="Criar tarefa" />
 
