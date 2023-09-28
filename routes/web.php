@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/task/new', [TaskController::class, 'create'])->name('task.create');
 Route::get('/task/edit', [TaskController::class, 'edit'])->name('task.edit');
+Route::post('/task/edit_action', [TasController::class, 'edit_action'])->name('task.edit_action');
 Route::get('/task/delete', [TaskController::class, 'delete'])->name('task.delete');
 Route::get('/task', [TaskController::class, 'index'])->name('task.view');
 
