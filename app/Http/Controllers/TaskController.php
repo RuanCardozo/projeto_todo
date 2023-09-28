@@ -39,7 +39,16 @@ class TaskController extends Controller
 
     public function edit_action(Request $request){
 
-        return 'ok';
+        $request_date = $request->only(['title', 'due_date', 'category_id', 'description']);
+
+        $task = Task::find($request->id);
+        if(!$task){
+            return 'erro de task não existente';
+        }
+        $task->update($request_date);
+        $task->save();
+        return redirect(route('home'));
+
     }
 
 

@@ -8,6 +8,9 @@
     <section id="task_section">
         <h1>Editar tarefa </h1>
         <form method="POST" action="{{route('task.edit_action')}}">
+            @csrf
+
+            <input type="hidden" name="id" value="{{$task->id}}"/>
 
             <x-form.text_input
                 name="title"
@@ -47,6 +50,7 @@
                 submitTxt="Atualizar tarefa" />
 
         </form>
+        @csrf
     </section>
 
 </x-layout>
