@@ -18,6 +18,12 @@
                 placeholder="Digite o titulo da sua tarefa"
                 :value="$task->title" />
 
+
+            <x-form.checkbox_input
+                name="is_done"
+                label="Tarefa realizada ?"
+                checked="{{$task->is_done}}"/>
+
             <x-form.text_input
                 type="datetime-local"
                 name="due_date"

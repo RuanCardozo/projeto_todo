@@ -41,6 +41,9 @@ class TaskController extends Controller
 
         $request_date = $request->only(['title', 'due_date', 'category_id', 'description']);
 
+        $request_date['is_done'] = $request->is_done ? true : false;
+
+
         $task = Task::find($request->id);
         if(!$task){
             return 'erro de task não existente';
