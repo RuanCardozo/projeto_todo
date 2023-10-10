@@ -11,14 +11,16 @@
 
             <x-form.text_input
                 name="title"
-                abel="Titulo da tarefa"
-                placeholder="Digite o titulo da sua tarefa" />
+                label="Titulo da tarefa"
+                placeholder="Digite o titulo da sua tarefa"
+            />
 
             <x-form.text_input
                 type="datetime-local"
                 name="due_date"
                 label="Data da realização"
-                placeholde="data de realização" />
+                placeholde="data de realização"
+            />
 
             <x-form.select_input
                 name="category_id"
@@ -33,11 +35,13 @@
             <x-form.textarea_input
                 label="Descrição da tarefa"
                 name="description"
-                placeholder="Digite a descrição da tarefa"/>
+                placeholder="Digite a descrição da tarefa"
+            />
 
             <x-form.form_button
                 resetTxt="Resetar"
-                submitTxt="Criar tarefa" />
+                submitTxt="Criar tarefa"
+            />
 
         </form>
     </section>
