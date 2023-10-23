@@ -8,6 +8,7 @@
     <section id="task_section">
         <h1>Registrar-se </h1>
         <form method="POST" action="{{route('user.register_action')}}">
+            @csrf
 
             <x-form.text_input
                 name="name"
@@ -19,14 +20,14 @@
                 type="email"
                 name="email"
                 label="Seu email"
-                placeholde="Seu email"
+                placeholder="Seu email"
             />
 
             <x-form.text_input
                 type="password"
                 name="password"
                 label="Sua senha"
-                placeholde="Sua senha"
+                placeholder="Sua senha"
             />
 
             <x-form.form_button

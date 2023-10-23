@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Use\Models\User;
+use App\Models\User;
 
 class AuthController extends Controller
 {
@@ -18,5 +18,6 @@ class AuthController extends Controller
     public function register_action(Request $request){
         $data = $request->only ('name', 'email', 'password');
         $userCreated = User::create($data);
+        dd($userCreated);
     }
 }

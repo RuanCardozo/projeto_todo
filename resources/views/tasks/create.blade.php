@@ -19,7 +19,7 @@
                 type="datetime-local"
                 name="due_date"
                 label="Data da realização"
-                placeholde="data de realização"
+                placeholder="data de realização"
             />
 
             <x-form.select_input
