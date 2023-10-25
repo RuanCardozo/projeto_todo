@@ -10,7 +10,9 @@ use Illuminate\Support\Facades\Hash;
 class AuthController extends Controller
 {
     public function index(Request $request){
-        dd(Auth::user());
+        if(Auth::check()){
+            return redirect()->route('home');
+        };
         return view('login');
     }
 
@@ -28,6 +30,10 @@ class AuthController extends Controller
     }
 
     public function register(Request $request){
+        $isLoggedIn = Auth::check();
+        if($isLoggedIn){
+            return redirect()->route('home');
+        };
         return view('register');
     }
 
@@ -46,5 +52,10 @@ class AuthController extends Controller
         User::create($data);
 
         return redirect(route('login'));
+    }
+
+    public function logout(){
+        Auth::logout();
+        return redirect()->route('login');
     }
 }
