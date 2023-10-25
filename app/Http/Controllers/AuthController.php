@@ -10,6 +10,7 @@ use Illuminate\Support\Facades\Hash;
 class AuthController extends Controller
 {
     public function index(Request $request){
+        dd(Auth::user());
         return view('login');
     }
 
@@ -18,7 +19,12 @@ class AuthController extends Controller
             'email' => 'required|email',
             'password' => 'required|min:6'
         ]);
-        dd($validator);
+
+        if(Auth::attempt($validator)){
+            return redirect()->route('home');
+        };
+
+
     }
 
     public function register(Request $request){

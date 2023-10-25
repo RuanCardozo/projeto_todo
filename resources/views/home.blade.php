@@ -6,7 +6,7 @@
     </x-slot:btn>
     <section class="graph">
         <div class="graph_header"\>
-            <h2>Progreso do Dia</h2>
+            <h2>Progreso do Dia - </h2>
 
             <div class="graph_header-line">
             </div>
