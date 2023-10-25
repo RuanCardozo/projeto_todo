@@ -47,4 +47,10 @@
 
         </div>
     </section>
+
+    <script>
+        function taskUpdate(element){
+            alert(element.checked);
+        }
+    </script>
 </x-layout>

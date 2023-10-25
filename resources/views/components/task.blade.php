@@ -1,7 +1,7 @@
 <div class="task">
 
     <div class="title">
-        <input type="checkbox"
+        <input type="checkbox" onchange="taskUpdate(this)"
         @if ($data && $data['is_done'])
             checked
         @endif
