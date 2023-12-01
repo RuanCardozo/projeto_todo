@@ -17,6 +17,9 @@ class HomeController extends Controller
             $filteredDate = date('Y-m-d');
         }
 
+        $data['date_as_string'] = '01 de dez';
+        $data['date_prev_button'] = '30 de nov';
+        $data['date_next_button'] = '02 de dez';
 
         $data['tasks'] = Task::whereDate('due_date', $filteredDate)->get();
         $data['AuthUser'] = Auth::user();

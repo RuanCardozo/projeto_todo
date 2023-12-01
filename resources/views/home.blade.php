@@ -17,9 +17,13 @@
             </div>
 
             <div class="graph_header-date">
-                <img src="/assets/images/icon-prev.png"/>
-                    13 de dezembro
-                <img src="/assets/images/icon-next.png"/>
+                <a href="{{route('home', ['date'=> $date_prev_button])}}">
+                    <img src="/assets/images/icon-prev.png"/>
+                </a>
+                    {{$date_as_string}}
+                    <a href="{{route('home', ['date'=> $date_next_button])}}">
+                    <img src="/assets/images/icon-next.png"/>
+                </a>
             </div>
         </div>
 
