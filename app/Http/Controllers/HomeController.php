@@ -11,8 +11,14 @@ use Illuminate\Support\Facades\DB;
 class HomeController extends Controller
 {
     public function index(Request $request){
+        if($request->date){
+            $filteredDate = $request->date;
+        }else{
+            $filteredDate = date('Y-m-d');
+        }
 
-        $data['tasks'] = Task::whereDate('due_date', date('Y-m-d'))->get();
+
+        $data['tasks'] = Task::whereDate('due_date', $filteredDate)->get();
         $data['AuthUser'] = Auth::user();
 
         $data['tasks_count'] = $data['tasks']->count();
